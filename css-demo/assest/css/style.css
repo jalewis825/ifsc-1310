@@ -1,0 +1,29 @@
+/*  ---------------css-demo-------------------  */
+/*  --------------Color Scheme ---------------  
+Main Color - #16EFEA*/
+
+/*  ---------------Box Sizing-----------------  */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    background-color: darkcyan;
+    font-family: "Titillium Web", sans-serif;
+}
+main{
+    background-color:cyan
+}
+
+header.primary{
+    background-color: cadetblue;
+    color: #ffffff;
+    text-align:center;
+    text-shadow: 2px 2px #000000;
+    
+}
