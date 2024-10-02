@@ -14,10 +14,12 @@ html {
   
 body{
     background-color: darkcyan;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Gabarito", sans-serif;
+    margin:0
 }
 main{
-    background-color:cyan
+    background-color:#008ED4
+    
 }
 
 header.primary{
@@ -25,5 +27,79 @@ header.primary{
     color: #ffffff;
     text-align:center;
     text-shadow: 2px 2px #000000;
-    
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  /*Single Value short hand*/
+  padding: 40px;  
+  /*T,R,B,L*/
+  padding: 20px 40ps 20px 40px;
+  /*Two Value Top/Boteom / L/R*/
+  padding: 20px 40px;
 }
+
+header.primary h1{
+  font-size:2.4rem;
+  /*top | left & right | bottom*/
+  margin:20px 0 0;
+}
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none;
+
+}
+header.primary h2{
+  font: size 1.4rem;
+  margin: 0;
+}
+
+header.primary nav{}
+header.primary ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:10px 0;
+}
+header.primary li{
+  list-style-type: none;
+}
+
+header.primary ul li a{
+  color:#ffffff;
+  text-decoration: none;
+  /*size | style | color of border*/
+  border: 1px solid #5AF2C1;
+  padding: 7.5px 10px;
+  background-color: rgba(0,0,0, .4);
+  /*border radius can have up to 4 values in them;
+  starts at top left corner and moves left to right;
+  one value applies to all 4 corners*/
+  border-radius: 15px;
+  transition:.4s;
+}
+header.primary ul li a:hover{
+  background-color: rgba(0,0,0, .8);
+}
+
+
+
+
+/* --------- Media Queries ----------- */
+
+@media screen and (max-width: 560px){
+  
+  header.primary nav ul{
+    flex-direction:column;
+    gap:10px;
+    max-width:200px;
+    margin:10px auto;
+  }  
+    
+    header.primary nav a{
+      display:block;
+    }  
+}
+  
