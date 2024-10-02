@@ -1,4 +1,64 @@
-body{
-    background-color:darkturquoise
+/*Main Background - #038C7F 
+Primary Header Background - #4ebfb4c1
+Primary Header Border - #08f5ddd6
+#127369
+#10403B
+#8AA6A3
+#4C5958
+#BFBFBF*/
+
+/*  ---------------Box Sizing-----------------  */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: #038C7F;
+    font-family: "Gabarito", sans-serif;
+    margin:0
 }
+
+main{
+    background-color:#038C7F 
+}
+
+header.primary h1{
+    color:antiquewhite;
+    font-size:2.4ream;
+    background-color: #4ebfb4c1; 
+}
+nav.primary ul{
+    display:felx;
+    flex-direction: row; 
+    
+}
+nav.primary ul li{
+    list-style-type: none;
+    
+    margin: 10px;
+    padding: 10px 10px;
+}
+nav.primary ul li a{  
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #08f5ddd6;
+    padding: 7.5px 10px;
+    background-color: rgba(0,0,0, .4);
+    border-radius: 15px;
+    transition:.4s;
+}
+
+nav.primary ul li a:hover{
+    background-color: rgba(0,0,0, .8);
+}
+
+
+
+
+
 

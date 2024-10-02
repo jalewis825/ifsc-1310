@@ -1,6 +1,14 @@
 /*  ---------------css-demo-------------------  */
 /*  --------------Color Scheme ---------------  
-Main Color - #16EFEA*/
+
+Main Background - #038C7F 
+Primary Header Background - #4ebfb4c1
+Primary Header Border - #08f5ddd6
+#127369
+#10403B
+#8AA6A3
+#4C5958
+#BFBFBF
 
 /*  ---------------Box Sizing-----------------  */
 html {
@@ -18,12 +26,12 @@ body{
     margin:0
 }
 main{
-    background-color:#008ED4
+    background-color:#038C7F
     
 }
 
 header.primary{
-    background-color: cadetblue;
+    background-color:#4ebfb4c1 ;
     color: #ffffff;
     text-align:center;
     text-shadow: 2px 2px #000000;
@@ -36,7 +44,7 @@ header.primary{
   padding: 40px;  
   /*T,R,B,L*/
   padding: 20px 40ps 20px 40px;
-  /*Two Value Top/Boteom / L/R*/
+  /*Two Value Top/Bottom / L/R*/
   padding: 20px 40px;
 }
 
@@ -71,7 +79,7 @@ header.primary ul li a{
   color:#ffffff;
   text-decoration: none;
   /*size | style | color of border*/
-  border: 1px solid #5AF2C1;
+  border: 2px solid #08f5ddd6;
   padding: 7.5px 10px;
   background-color: rgba(0,0,0, .4);
   /*border radius can have up to 4 values in them;
