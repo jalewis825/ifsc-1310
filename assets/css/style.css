@@ -32,9 +32,11 @@ header.primary h1{
     font-size:2.4ream;
     background-color: #4ebfb4c1; 
 }
-nav.primary ul{
+header.primary nav ul{
     display:felx;
     flex-direction: row; 
+    justify-content:space-around;
+    padding:10px 0;
     
 }
 nav.primary ul li{
