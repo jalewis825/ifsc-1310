@@ -1,0 +1,103 @@
+/*  ---------------Box Sizing-----------------  */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+/*  ---------------Responsive Images-----------------  */
+img{
+  max-width: 100%;
+}
+
+/*  ---------------Utility Classes-----------------  */
+.container{
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+
+body{
+    font-family: "Gabarito", sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+.opaque-background {
+  position: relative; 
+  padding: 20px;
+}
+
+.opaque-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/launch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5; 
+  z-index: -1;
+}
+
+.replace-scott {
+  width: 800px;
+  height: 99px;
+  background: url(../img/spacex-logo.png);
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+header.primary{
+  color:#03588C;
+  text-align:center;
+  text-shadow: .5px .5px #0D0D0D;
+  padding: 40px;
+}
+
+header.primary h1 {
+  font-size:2.4rem;
+  margin: 20px 0 0;
+}
+
+header.primary h1 a{
+  text-decoration: none;
+}
+
+header.primary nav{
+  max-width: 960px;
+  margin: auto;
+}
+
+header.primary ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:10px 0;
+}
+
+header.primary li{
+  list-style-type: none;
+}
+
+header.primary ul li a {
+  color:#03588C;
+  text-decoration: none;
+  border: 2.5px solid #03588C;
+  padding: 7.5px 10px;
+  background-color: rgba(164,165,166,.4);
+  border-radius: 15px;
+  transition:.4s;
+}
+
+header.primary ul li a:hover{
+  background-color: rgba(164,165,166,.8);
+}
+
