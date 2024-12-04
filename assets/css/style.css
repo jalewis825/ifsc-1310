@@ -65,7 +65,7 @@ nav.container li{
     width: 100%;
 }
 
-nav.container ul li a, .dropbtn{  
+nav.container ul li a, .dropdown-toggle {  
     color: #ffffff;
     text-decoration: none;
     border: 2px solid #08f5ddd6;
@@ -82,33 +82,37 @@ nav.container ul li a, .dropbtn{
     line-height: 1.5;
 }
 
-nav.container ul li a:hover, .dropbtn:click{
+nav.container ul li a:hover, .dropdown-toggle:hover {
     background-color: rgba(0,140,127, .4);
 }
-  
-  /* The container <div> - needed to position the dropdown content */
+
+.dropdown-toggle:hover{
+    cursor: pointer;
+}
+
 .dropdown {
     position: relative;
-    display: block;
+    display: inline-block;
     width: 100%;
 }
   
-  /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    left:0;
-    margin:0;
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0,0,0, 1);
     z-index: 1;
     border-radius: 15px;
-    width: 100%;
-    box-sizing: border-box;
     font-size: 16px;
     line-height: 1.5;
+    left: 50%;
+    transform:translate(-50%);
+    width: max-content;
+    max-width: 90vw;
+    min-width: 150px;
+    text-align: center;
+
 }
   
-  /* Links inside the dropdown */
 .dropdown-content a {
     text-decoration: none;
     display: block;
@@ -118,9 +122,8 @@ nav.container ul li a:hover, .dropbtn:click{
     box-sizing: border-box;
 }
 
-  /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown.active .dropdown-content {
+    display:block;
 }
   
 #content h2{
@@ -155,6 +158,15 @@ nav.container ul li a:hover, .dropbtn:click{
     font-size:1.2rem;
     text-align:center;
   }
+
+a {
+    color:#08f5ddd6;
+    
+}
+  a:hover {
+    text-decoration: none;
+    color:antiquewhite
+}
 
 /* --------- Media Queries ----------- */
 
