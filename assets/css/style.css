@@ -82,7 +82,7 @@ nav.container ul li a, .dropbtn{
     line-height: 1.5;
 }
 
-nav.container ul li a:hover, .dropbtn:hover{
+nav.container ul li a:hover, .dropbtn:click{
     background-color: rgba(0,140,127, .4);
 }
   
